@@ -1,0 +1,222 @@
+@media screen and (min-width: 900px) {
+  .main {
+    position: relative;
+    display: flex;
+    height: 600px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  .div1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 8vw;
+    z-index: 3;
+  }
+  .t1 {
+    font-size: 45px;
+    color: rgb(104, 104, 104);
+  }
+  .t2 {
+    font-size: 95px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .tags {
+    font-size: 60px;
+    color: rgb(225, 180, 45);
+    font-weight: 700;
+  }
+  .txt {
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: 540;
+    width: 50vw;
+  }
+
+  .div2 {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 50vw;
+    transform: scaleX(-1);
+  }
+  .div3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(70%) sepia(30%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .main {
+      background-color: black;
+    }
+    .div3 {
+      background-image: url("/img1.jpg");
+      filter: grayscale(70%) sepia(30%);
+    }
+    .t1 {
+      color: rgb(184, 184, 184);
+    }
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .main {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  .div1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 8vw;
+    z-index: 3;
+  }
+  .t1 {
+    font-size: 45px;
+    color: rgb(104, 104, 104);
+  }
+  .t2 {
+    font-size: 95px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .tags {
+    font-size: 60px;
+    color: rgb(225, 180, 45);
+    font-weight: 700;
+  }
+  .txt {
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: 540;
+    width: 80vw;
+  }
+
+  .div2 {
+    top: 0;
+    right: -100px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 80vw;
+    transform: scaleX(-1);
+  }
+  .div3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(70%) sepia(30%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .main {
+      background-color: black;
+    }
+    .div3 {
+      background-image: url("/img1.jpg");
+      filter: grayscale(70%) sepia(30%);
+    }
+    .t1 {
+      color: rgb(184, 184, 184);
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .main {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 50px);
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+  .div1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 4vw;
+    z-index: 3;
+  }
+  .t1 {
+    font-size: 40px;
+    color: rgb(104, 104, 104);
+  }
+  .t2 {
+    font-size: 65px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .tags {
+    font-size: 55px;
+    color: rgb(225, 180, 45);
+    font-weight: 700;
+  }
+  .txt {
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 540;
+    width: 90vw;
+  }
+
+  .div2 {
+    top: 0;
+    right: -50px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100vw;
+    transform: scaleX(-1);
+  }
+  .div3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img2.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(70%) sepia(30%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .main {
+      background-color: black;
+    }
+    .div3 {
+      background-image: url("/img1.jpg");
+      filter: grayscale(70%) sepia(30%);
+    }
+    .t1 {
+      color: rgb(184, 184, 184);
+    }
+  }
+}
