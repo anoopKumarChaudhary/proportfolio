@@ -58,10 +58,120 @@
   }
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .subt {
+    color: rgb(104, 104, 104);
+    padding-top: 5px;
+  }
+  .masonryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense;
+    gap: 6px;
+    padding: 30px 3vw 0 3vw;
+  }
+
+  .masonryItem {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(30%) sepia(10%);
+    border: 2px solid rgb(69, 69, 69);
+    cursor: pointer;
+  }
+
+  /* Adjusting sizes for Masonry effect */
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .item3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .masonryItem:hover {
+    filter: none;
+  }
+
   @media (prefers-color-scheme: dark) {
+    .subt {
+      color: rgb(184, 184, 184);
+    }
   }
 }
 @media screen and (max-width: 520px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .subt {
+    color: rgb(104, 104, 104);
+    padding-top: 5px;
+  }
+  .masonryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense;
+    gap: 6px;
+    padding: 30px 3vw 0 3vw;
+  }
+
+  .masonryItem {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(30%) sepia(10%);
+    border: 2px solid rgb(69, 69, 69);
+    cursor: pointer;
+  }
+
+  /* Adjusting sizes for Masonry effect */
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .item3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .masonryItem:hover {
+    filter: none;
+  }
+
   @media (prefers-color-scheme: dark) {
+    .subt {
+      color: rgb(184, 184, 184);
+    }
   }
 }
