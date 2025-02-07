@@ -1,5 +1,5 @@
 @media screen and (min-width: 900px) {
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: 18px;
   }
 
@@ -16,9 +16,9 @@
 
   ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
-  }
+  } */
   @media (prefers-color-scheme: dark) {
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
       width: 18px;
     }
 
@@ -35,7 +35,7 @@
 
     ::-webkit-scrollbar-thumb:hover {
       background: #ffffff;
-    }
+    } */
   }
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
