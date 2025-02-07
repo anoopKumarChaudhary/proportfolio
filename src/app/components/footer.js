@@ -1,10 +1,15 @@
 import React from "react";
 import styles from "./styles/footer.module.css";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 const Footer = React.memo(() => {
   return (
-    <div className={styles.main}>
+    <motion.div
+      className={styles.main}
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className={styles.main1}>
         {" "}
         <div className={styles.div1}>
@@ -34,7 +39,7 @@ const Footer = React.memo(() => {
       </div>
       <div className={styles.divi}></div>
       <h5>Contact anytime for projects</h5>
-    </div>
+    </motion.div>
   );
 });
 

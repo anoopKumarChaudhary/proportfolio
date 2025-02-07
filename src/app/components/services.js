@@ -1,9 +1,15 @@
 import React from "react";
 import styles from "./styles/services.module.css";
+import { motion } from "framer-motion";
 
 const Service = React.memo(() => {
   return (
-    <div className={styles.outer_div}>
+    <motion.div
+      className={styles.outer_div}
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className={styles.title}>
         <h1>SERVICES</h1>
       </div>
@@ -79,7 +85,7 @@ const Service = React.memo(() => {
           </p>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 });
 
