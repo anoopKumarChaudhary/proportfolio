@@ -19,6 +19,7 @@ const images = [
   "ii15.png",
   "ii16.jpeg",
   "ii17.jpeg",
+  "ii10.jpeg",
 ];
 
 const Hackathons = React.memo(() => {
