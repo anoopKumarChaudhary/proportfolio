@@ -144,7 +144,8 @@
     filter: grayscale(30%) sepia(10%);
     border: 2px solid rgb(255, 255, 255);
     cursor: pointer;
-    box-shadow: black 0 0 5px 1px;
+    /* box-shadow: black 0 0 5px 1px; */
+    outline: 2px solid black;
   }
 
   /* Adjusting sizes for Masonry effect */
@@ -173,6 +174,7 @@
   @media (prefers-color-scheme: dark) {
     .masonryItem {
       border: 2px solid rgb(0, 0, 0);
+      outline: 2px solid white;
     }
     .subt {
       color: rgb(184, 184, 184);
