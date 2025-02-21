@@ -3,6 +3,17 @@ import styles from "./styles/skills.module.css";
 import { motion } from "framer-motion";
 
 const Skills = React.memo(() => {
+  const getRandomColor = () => {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+
+  // Generate a random color
+  const randomColors = Array.from({ length: 28 }, () => getRandomColor());
   return (
     <div className={styles.main}>
       <motion.h1
@@ -23,35 +34,92 @@ const Skills = React.memo(() => {
       </motion.h4>
       <motion.div
         className={styles.skills}
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <p className={styles.skill}>Flutter</p>
-        <p className={styles.skill}>NodeJS</p>
-        <p className={styles.skill}>NextJS</p>
-        <p className={styles.skill}>AI</p>
-        <p className={styles.skill}>Redux</p>
-        <p className={styles.skill}>ML & DL</p>{" "}
-        <p className={styles.skill}>ExpressJS </p>{" "}
-        <p className={styles.skill}>SpringBoot</p>{" "}
-        <p className={styles.skill}>ReactJs</p>{" "}
-        <p className={styles.skill}>TensorFlow</p>{" "}
-        <p className={styles.skill}>RESTful API</p>{" "}
-        <p className={styles.skill}>DSA</p> <p className={styles.skill}>SQL</p>
-        <p className={styles.skill}>Keras</p>{" "}
-        <p className={styles.skill}>SciPy</p>{" "}
-        <p className={styles.skill}>MongoDB</p>{" "}
-        <p className={styles.skill}>FireBase</p>{" "}
-        <p className={styles.skill}>Git</p>
-        <p className={styles.skill}>UI</p>
-        <p className={styles.skill}>Java</p> <p className={styles.skill}>C++</p>{" "}
-        <p className={styles.skill}>Dart</p>{" "}
-        <p className={styles.skill}>JavaScript</p>{" "}
-        <p className={styles.skill}>Python</p>
-        <p className={styles.skill}>Typescript</p>
-        <p className={styles.skill}>Kotlin</p>
-        <p className={styles.skill}>Rust</p>
+        <p className={styles.skill} style={{ borderColor: randomColors[0] }}>
+          Flutter
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[1] }}>
+          NodeJS
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[2] }}>
+          NextJS
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[3] }}>
+          AI
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[4] }}>
+          Redux
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[5] }}>
+          ML & DL
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[6] }}>
+          ExpressJS{" "}
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[7] }}>
+          SpringBoot
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[8] }}>
+          ReactJs
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[9] }}>
+          TensorFlow
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[10] }}>
+          RESTful API
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[11] }}>
+          {" "}
+          DSA
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[12] }}>
+          SQL
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[13] }}>
+          Keras
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[14] }}>
+          SciPy
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[15] }}>
+          MongoDB
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[16] }}>
+          FireBase
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[17] }}>
+          Git
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[18] }}>
+          UI
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[19] }}>
+          Java
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[20] }}>
+          C++
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[21] }}>
+          Dart
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[22] }}>
+          JavaScript
+        </p>{" "}
+        <p className={styles.skill} style={{ borderColor: randomColors[23] }}>
+          Python
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[24] }}>
+          Typescript
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[25] }}>
+          Kotlin
+        </p>
+        <p className={styles.skill} style={{ borderColor: randomColors[26] }}>
+          Rust
+        </p>
       </motion.div>
     </div>
   );

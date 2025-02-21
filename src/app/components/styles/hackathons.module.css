@@ -144,6 +144,7 @@
     filter: grayscale(30%) sepia(10%);
     border: 2px solid rgb(255, 255, 255);
     cursor: pointer;
+    box-shadow: black 0 0 4px 0;
   }
 
   /* Adjusting sizes for Masonry effect */
