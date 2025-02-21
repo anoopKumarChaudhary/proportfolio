@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Service = React.memo(() => {
   return (
-    <motion.div
+    <div
       className={styles.outer_div}
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -26,46 +26,71 @@ const Service = React.memo(() => {
       <div className={styles.service_list}>
         <ul className={styles.list}>
           <li className={styles.l1}>Web Development</li>
-          <p className={styles.head}>
+          <motion.p
+            className={styles.head}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             {" "}
             We create responsive, scalable, and visually appealing websites
             using the latest technologies and frameworks. Our web development
             services ensure a robust online presence that enhances user
             engagement and drives business growth.
-          </p>
+          </motion.p>
           <div className={styles.spacer}></div>
           <li className={styles.l1}>Android and iOS Development</li>
-          <p className={styles.head}>
+          <motion.p
+            className={styles.head}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             {" "}
             Our mobile development team specializes in creating feature-rich and
             user-friendly applications for both Android and iOS platforms. We
             focus on performance, security, and seamless user experience to
             ensure your app stands out in the competitive market.
-          </p>
+          </motion.p>
           <div className={styles.spacer}></div>
           <li className={styles.l1}>Backend Development</li>
-          <p className={styles.head}>
+          <motion.p
+            className={styles.head}
+            initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
             {" "}
             We provide robust backend development services, building secure and
             scalable server-side applications. Our expertise in Node.js, Python,
             Ruby, and other backend technologies ensures your application
             performs efficiently under any load.
-          </p>
+          </motion.p>
           <div className={styles.spacer}></div>
           <li className={styles.l1}>
             Machine Learning and Deep Learning Models
           </li>
-          <p className={styles.head}>
+          <motion.p
+            className={styles.head}
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             {" "}
             Our data science team leverages the power of machine learning and
             deep learning to create intelligent models that drive innovation.
             Whether its predictive analytics, natural language processing, or
             image recognition, we have the expertise to build advanced AI
             solutions tailored to your business needs.
-          </p>
+          </motion.p>
           <div className={styles.spacer}></div>{" "}
           <li className={styles.l1}>UI/UX Designing</li>
-          <p className={styles.head}>
+          <motion.p
+            className={styles.head}
+            initial={{ opacity: 0, x: 90 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+          >
             {" "}
             Our design team excels in creating intuitive and engaging user
             interfaces and experiences. We prioritize user-centric design
@@ -73,19 +98,24 @@ const Service = React.memo(() => {
             also delightful to use. Our services include wireframing,
             prototyping, and user testing to deliver designs that resonate with
             your target audience.
-          </p>
+          </motion.p>
           <div className={styles.spacer}></div>{" "}
           <li className={styles.l1}>Logo Design</li>
-          <p className={styles.head}>
+          <motion.p
+            className={styles.head}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
             {" "}
             We offer professional logo design services to help you establish a
             strong brand identity. Our creative designers work closely with you
             to create logos that reflect your brand values and make a lasting
             impression.
-          </p>
+          </motion.p>
         </ul>
       </div>
-    </motion.div>
+    </div>
   );
 });
 
