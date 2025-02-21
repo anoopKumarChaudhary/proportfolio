@@ -42,10 +42,16 @@ const Hackathons = React.memo(() => {
       </motion.h4>
       <div className={styles.masonryGrid}>
         {images.map((src, index) => (
-          <img
+          <motion.img
             key={index}
             src={src}
             className={`${styles.masonryItem} ${styles[`item${index % 5}`]}`}
+            initial={{
+              opacity: 0,
+              x: Math.pow(-1, index) * (Math.random() * window.innerWidth),
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: (index * 0.2) % 1 }}
           />
         ))}
       </div>
