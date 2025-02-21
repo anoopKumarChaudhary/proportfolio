@@ -44,7 +44,7 @@ const Service = React.memo(() => {
             className={styles.head}
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7 }}
           >
             {" "}
             Our mobile development team specializes in creating feature-rich and
@@ -58,7 +58,7 @@ const Service = React.memo(() => {
             className={styles.head}
             initial={{ opacity: 0, x: 70 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.9 }}
           >
             {" "}
             We provide robust backend development services, building secure and
@@ -74,7 +74,7 @@ const Service = React.memo(() => {
             className={styles.head}
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.1 }}
           >
             {" "}
             Our data science team leverages the power of machine learning and
@@ -89,7 +89,7 @@ const Service = React.memo(() => {
             className={styles.head}
             initial={{ opacity: 0, x: 90 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
+            transition={{ duration: 1.3 }}
           >
             {" "}
             Our design team excels in creating intuitive and engaging user
@@ -105,7 +105,7 @@ const Service = React.memo(() => {
             className={styles.head}
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.4 }}
           >
             {" "}
             We offer professional logo design services to help you establish a

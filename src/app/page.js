@@ -32,7 +32,7 @@ export default function Home() {
           }
         });
       },
-      { root: null, rootMargin: "0px", threshold: 0.1 }
+      { root: null, rootMargin: "0px", threshold: 0 }
     );
 
     observerRef.current.querySelectorAll(".page-placeholder").forEach((el) => {

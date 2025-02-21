@@ -21,7 +21,7 @@ const Footer = React.memo(() => {
           className={styles.div2}
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8 }}
         >
           <h3>Contact</h3>
           <h4>anupchaudhary1021@gmail.com</h4>
@@ -32,7 +32,7 @@ const Footer = React.memo(() => {
           className={styles.div3}
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 1.1 }}
         >
           <h3>Information</h3>
           <h4>Skills</h4>
@@ -45,7 +45,7 @@ const Footer = React.memo(() => {
         className={styles.icons}
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.1 }}
+        transition={{ duration: 1.4 }}
       >
         <FaInstagram className={styles.icon} />
         <FaTwitter className={styles.icon} />
