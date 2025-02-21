@@ -127,7 +127,7 @@
     background-color: rgb(243, 243, 243);
     transition: 600ms ease-in-out;
     overflow: hidden;
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
   }
   .skill:hover {
     background-color: black;
