@@ -210,7 +210,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(70%) sepia(30%);
+    filter: grayscale(10%) sepia(0%);
   }
 
   @media (prefers-color-scheme: dark) {
