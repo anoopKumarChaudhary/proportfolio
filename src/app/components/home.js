@@ -63,7 +63,7 @@ const HomePage = React.memo(() => {
           className={styles.div3}
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.8 }}
         >
           {/* <img src="/img2.png" className={styles.img}></img> */}
         </motion.div>
