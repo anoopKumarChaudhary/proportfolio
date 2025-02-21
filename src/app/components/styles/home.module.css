@@ -162,7 +162,7 @@
     width: 100%;
     padding-left: 4vw;
     z-index: 3;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .t1 {
     font-size: 40px;
@@ -195,12 +195,13 @@
     justify-content: flex-end;
     height: 100%;
     width: 100vw;
+
     transform: scaleX(-1);
     /* padding-bottom: 40px; */
     /* background-color: black; */
   }
   .div3 {
-    height: 70%;
+    height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -215,6 +216,9 @@
   @media (prefers-color-scheme: dark) {
     .main {
       background-color: black;
+    }
+    .div1 {
+      background-color: rgba(0, 0, 0, 0.3);
     }
     .div3 {
       background-image: url("/img1.jpg");
