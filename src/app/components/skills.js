@@ -36,7 +36,7 @@ const Skills = React.memo(() => {
         className={styles.skills}
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.9 }}
+        transition={{ duration: 0.7 }}
       >
         <p className={styles.skill} style={{ borderColor: randomColors[0] }}>
           Flutter
