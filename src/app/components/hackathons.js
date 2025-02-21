@@ -51,7 +51,7 @@ const Hackathons = React.memo(() => {
               x: 50,
             }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: index % 1 }}
+            transition={{ duration: 1 }}
           />
         ))}
       </div>

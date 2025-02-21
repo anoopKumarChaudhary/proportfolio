@@ -20,20 +20,27 @@ const HomePage = React.memo(() => {
     <div className={styles.main}>
       <div className={styles.div1}>
         <div>
-          <h3 className={styles.t1}>Hii I Am </h3>
+          <motion.h3
+            className={styles.t1}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Hii I Am{" "}
+          </motion.h3>
           <motion.h3
             className={styles.t2}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.8 }}
           >
             Anoop Chaudhary{" "}
           </motion.h3>
           <motion.h2
             key={titles[index]}
-            initial={{ y: 50, opacity: 0 }}
+            initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -50, opacity: 0 }}
+            exit={{ y: -30, opacity: 0 }}
             transition={{ duration: 0.5 }}
             className={styles.tags}
           >
