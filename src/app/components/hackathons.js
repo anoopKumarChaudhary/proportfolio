@@ -48,10 +48,10 @@ const Hackathons = React.memo(() => {
             className={`${styles.masonryItem} ${styles[`item${index % 5}`]}`}
             initial={{
               opacity: 0,
-              x: 50,
+              x: 20,
             }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 }}
           />
         ))}
       </div>
